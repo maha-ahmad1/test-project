@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Project</title>
+    <link rel="stylesheet" href="scss/main.css" />
+</head>
+
+<body class="container-lg">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Navbar brand -->
+                <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                    <svg width="130" height="56" viewBox="0 0 130 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_80_12)" filter="url(#filter0_d_80_12)">
+                            <path
+                                d="M54.6604 0.0282924L52.7173 1.57257L53.8995 3.06147L55.8426 1.51719L54.6604 0.0282924Z"
+                                fill="#D81923" />
+                            <path
+                                d="M55.22 11.3623L54.0374 9.87357L51.8218 11.6346C51.4706 11.1088 51.0955 10.601 50.7025 10.1082L52.0064 9.07172L50.8242 7.58299L49.4532 8.6725C49.0773 8.27542 48.6911 7.8886 48.2869 7.52016L52.5195 4.15588L51.3373 2.66716L46.795 6.27763C43.0414 3.40618 38.3521 1.6969 33.262 1.6969C20.9424 1.6969 10.955 11.6884 10.955 24.0141C10.955 27.2874 11.665 30.393 12.9305 33.194L7.72681 37.3302L8.90896 38.8189L13.8055 34.9272C14.0738 35.405 14.3579 35.8726 14.6595 36.3279L12.6293 37.9414L13.8114 39.4301L15.7788 37.8662C16.1715 38.3615 16.5837 38.8394 17.0161 39.2989L14.1327 41.5903L15.3149 43.0791L18.385 40.6389C22.3326 44.1767 27.5448 46.3309 33.2616 46.3309C45.5812 46.3309 55.5686 36.339 55.5686 24.0137C55.5686 20.119 54.5693 16.4589 52.8164 13.272L55.22 11.3623Z"
+                                fill="#D81923" />
+                            <path d="M56.8732 7.62203L55.2148 8.94L56.3971 10.4289L58.0554 9.11093L56.8732 7.62203Z"
+                                fill="#D81923" />
+                            <path d="M57.4006 2.3591L52.2041 6.48895L53.3861 7.97759L58.5826 3.84773L57.4006 2.3591Z"
+                                fill="#D81923" />
+                            <path d="M59.4556 0.722615L58.5598 1.43463L59.7422 2.92353L60.638 2.21151L59.4556 0.722615Z"
+                                fill="#D81923" />
+                            <path d="M6.34702 38.4267L4.40356 39.9706L5.58611 41.4592L7.52956 39.9154L6.34702 38.4267Z"
+                                fill="#D81923" />
+                            <path d="M12.9555 42.526L11.2971 43.8439L12.4793 45.3328L14.1377 44.0149L12.9555 42.526Z"
+                                fill="#D81923" />
+                            <path d="M11.2487 39.0379L6.05225 43.1677L7.23452 44.6567L12.431 40.5268L11.2487 39.0379Z"
+                                fill="#D81923" />
+                            <path d="M4.8947 44.0882L3.99878 44.7999L5.18132 46.2885L6.07725 45.5768L4.8947 44.0882Z"
+                                fill="#D81923" />
+                            <path
+                                d="M10.6521 32.0322C9.7639 29.5249 9.28027 26.8261 9.28027 24.0141C9.28027 10.7634 20.017 0.0213623 33.2621 0.0213623C37.8142 0.0213623 42.0703 1.29039 45.6958 3.49378"
+                                stroke="url(#paint0_linear_80_12)" stroke-miterlimit="10" />
+                            <path
+                                d="M55.0521 13.9803C56.459 17.033 57.2434 20.4319 57.2434 24.0141C57.2434 37.2648 46.5062 48.0069 33.2616 48.0069C27.7319 48.0069 22.6393 46.1343 18.5828 42.9889"
+                                stroke="url(#paint1_linear_80_12)" stroke-miterlimit="10" />
+                            <path
+                                d="M73.1531 10.9528C76.3449 10.9528 78.1735 12.5312 78.1735 15.3121C78.1735 18.2361 76.3445 19.9223 73.1531 19.9223H70.6606V23.5101H67.8276V10.9528H73.1531ZM70.661 17.5544H73.01C74.5877 17.5544 75.4845 16.8367 75.4845 15.4018C75.4845 14.0024 74.5882 13.3032 73.01 13.3032H70.661V17.5544Z"
+                                fill="#59595B" />
+                            <path
+                                d="M85.1668 21.07L84.1807 23.5098H81.2581L86.7091 10.9524H89.6318L94.9931 23.5098H91.9628L90.9767 21.07H85.1668ZM88.0895 13.9127L86.099 18.7923H90.0616L88.0895 13.9127Z"
+                                fill="#59595B" />
+                            <path
+                                d="M104.98 23.5098H102.147V19.5274L97.5032 10.9528H100.354L103.563 16.5854L106.701 10.9528H109.552L104.98 19.4556V23.5098Z"
+                                fill="#59595B" />
+                            <path
+                                d="M68.8965 37.7029H61.8203C62.183 40.2444 63.9671 41.666 66.9611 41.666C69.2592 41.666 70.7712 41.0608 71.2856 40.7282L72.2533 42.9974C71.8299 43.2393 69.683 44.2981 66.5681 44.2981C62.0625 44.2981 58.5242 41.7267 58.5242 36.4625C58.5242 31.5313 61.8203 28.1426 66.4771 28.1426C70.8314 28.1426 73.1603 30.5931 73.1603 33.9514C73.1603 36.2813 72.011 37.7029 68.8965 37.7029ZM66.4472 30.4422C63.3626 30.4422 61.8207 33.1952 61.7297 35.4944H68.1104C69.5617 35.4944 70.1667 35.0708 70.1667 33.6487C70.1667 32.1062 69.1383 30.4422 66.4472 30.4422Z"
+                                fill="#D81923" />
+                            <path
+                                d="M78.5127 31.8642C78.059 31.5919 77.6962 31.0474 77.6962 30.3516C77.6962 29.6557 78.1196 29.2321 78.7545 28.8992C79.45 28.5666 80.6292 28.2033 82.4436 28.2033C87.282 28.2033 90.2757 29.8976 90.2757 34.6775V43.7232C89.5498 43.8745 87.191 44.2374 83.4716 44.2374C77.4237 44.2374 76.2744 41.8775 76.2744 39.3664C76.2744 36.2201 78.0585 34.3441 83.29 34.3441C85.1044 34.3441 86.7373 34.4348 87.2214 34.5258V34.3745C87.2214 34.0415 87.191 33.7389 87.1308 33.4671C86.798 31.5612 85.4373 30.5627 82.6252 30.5627C80.2665 30.5631 79.0873 31.471 78.5127 31.8642ZM87.1915 36.7048C86.98 36.6441 85.0446 36.4629 83.6232 36.4629C80.5993 36.4629 79.3898 37.3703 79.3898 39.3066C79.3898 40.9402 80.2669 42.0596 83.5933 42.0596C85.6496 42.0596 86.7988 41.8476 87.1919 41.7267V36.7048H87.1915Z"
+                                fill="#D81923" />
+                            <path
+                                d="M97.6543 36.2205C97.6543 39.9721 99.9225 41.666 102.704 41.666C104.7 41.666 106.152 40.7585 106.454 40.5465L107.784 42.6943C107.029 43.2085 105.245 44.2374 102.341 44.2374C97.8961 44.2374 94.4185 41.3633 94.4185 36.2808C94.4185 31.1983 97.9564 28.2029 102.462 28.2029C105.214 28.2029 106.545 28.9893 106.998 29.292C107.391 29.6249 107.724 30.0481 107.724 30.6533C107.724 31.1372 107.392 31.8937 106.756 32.3776C106.272 31.8933 104.942 30.7738 102.674 30.7738C99.8922 30.7751 97.6543 32.6203 97.6543 36.2205Z"
+                                fill="#D81923" />
+                            <path
+                                d="M114.377 30.4422C114.861 29.716 116.312 28.1431 119.487 28.1431C123.146 28.1431 125.565 30.2306 125.565 34.3147V43.8142H122.451V34.9498C122.451 32.2874 121.422 30.7747 118.641 30.7747C115.828 30.7747 114.377 32.9225 114.377 35.585V43.8138H111.262V22.9391C111.262 22.0014 111.807 21.5171 112.926 21.5171C113.561 21.5171 114.165 21.7291 114.377 21.8197V30.4422H114.377Z"
+                                fill="#D81923" />
+                            <path
+                                d="M27.3481 26.4941C27.3481 26.6616 27.3481 26.8292 27.3481 26.9967C27.3477 30.2165 27.3511 33.4359 27.3443 36.6557C27.3417 37.8769 26.5171 38.8864 25.3405 39.1433C24.1815 39.3959 22.966 38.7933 22.4973 37.6837C22.3516 37.3392 22.2658 36.9412 22.2649 36.5677C22.2504 30.4277 22.2572 24.2873 22.2461 18.1473C22.2452 17.7198 22.3777 17.5809 22.8083 17.5814C28.6037 17.5912 34.3996 17.5831 40.1954 17.5873C41.5536 17.5886 42.6571 18.5491 42.8041 19.8211C42.9544 21.1247 42.1551 22.3194 40.8862 22.6207C40.4902 22.7148 40.0672 22.7195 39.6566 22.7207C37.0364 22.7284 34.4162 22.7229 31.7964 22.7246C31.6046 22.7246 31.4124 22.7472 31.1043 22.7665C31.3047 22.9887 31.4256 23.1362 31.5602 23.27C35.3822 27.0822 39.2063 30.8914 43.0271 34.7049C43.9384 35.6145 44.14 36.7232 43.6055 37.7862C42.8707 39.2485 40.987 39.6631 39.7113 38.6377C39.5122 38.4778 39.3324 38.2927 39.1512 38.1115C35.3749 34.3343 31.5999 30.5559 27.824 26.7783C27.7065 26.6608 27.5814 26.5505 27.46 26.4364C27.4229 26.456 27.3853 26.4748 27.3481 26.4941Z"
+                                fill="white" />
+                            <path
+                                d="M35.2395 24.7224C35.5638 24.707 35.7453 24.6916 35.9269 24.6912C37.3509 24.6878 38.7748 24.7053 40.1984 24.6809C42.3627 24.6442 44.2554 23.0717 44.6591 21.008C45.1927 18.2802 43.0779 15.6746 40.2971 15.6669C35.6129 15.6537 30.9283 15.6614 26.2441 15.6601C25.091 15.6597 23.9375 15.6473 22.7844 15.6652C22.3764 15.6716 22.235 15.5233 22.2401 15.1181C22.2572 13.7794 22.2547 12.4403 22.2418 11.1012C22.238 10.7233 22.3623 10.572 22.7579 10.5729C28.6665 10.5823 34.5786 10.4668 40.4833 10.6182C45.0133 10.7344 49.2621 14.182 49.7838 19.1214C50.3814 24.7809 46.2309 29.0847 41.5591 29.6946C41.4745 29.7057 41.3912 29.7258 41.307 29.7395C40.6735 29.8408 40.1616 29.7412 39.669 29.2163C38.3741 27.8353 37.0018 26.5274 35.6616 25.1887C35.545 25.072 35.4399 24.9442 35.2395 24.7224Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <filter id="filter0_d_80_12" x="0" y="0" width="131" height="56"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dy="4" />
+                                <feGaussianBlur stdDeviation="2" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_80_12" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_80_12"
+                                    result="shape" />
+                            </filter>
+                            <linearGradient id="paint0_linear_80_12" x1="37.3165" y1="-3.0399" x2="10.2851" y2="31.7699"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#85A555" />
+                                <stop offset="1" stop-color="#5B824E" />
+                            </linearGradient>
+                            <linearGradient id="paint1_linear_80_12" x1="55.8182" y1="14.5512" x2="28.0222" y2="50.3456"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#85A555" />
+                                <stop offset="1" stop-color="#5B824E" />
+                            </linearGradient>
+                            <clipPath id="clip0_80_12">
+                                <rect width="123" height="48" fill="white" transform="translate(4)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+                </a>
+            </div>
+            <!-- Collapsible wrapper -->
+
+            <!-- Right elements -->
+            <div class="d-flex gap-2 align-items-center">
+                <div class="dropdown">
+                    <button class="border-0 bg-transparent dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.22266 7.55469H29.7782V24.4436H2.22266V7.55469Z" fill="white" />
+                            <path d="M2.22266 7.55469H29.7782V9.77691H2.22266V7.55469Z" fill="#D22F27" />
+                            <path d="M2.22266 11.5547H29.7782V13.3325H2.22266V11.5547Z" fill="#D22F27" />
+                            <path d="M2.22266 15.1094H29.7782V16.8872H2.22266V15.1094Z" fill="#D22F27" />
+                            <path d="M2.22266 7.55469H16.4449V16.888H2.22266V7.55469Z" fill="#1E50A0" />
+                            <path d="M2.22266 18.6641H29.7782V20.4418H2.22266V18.6641Z" fill="#D22F27" />
+                            <path
+                                d="M4.22309 10.5556C4.65265 10.5556 5.00087 10.2073 5.00087 9.77778C5.00087 9.34822 4.65265 9 4.22309 9C3.79354 9 3.44531 9.34822 3.44531 9.77778C3.44531 10.2073 3.79354 10.5556 4.22309 10.5556Z"
+                                fill="white" />
+                            <path
+                                d="M7.77778 10.5556C8.20733 10.5556 8.55556 10.2073 8.55556 9.77778C8.55556 9.34822 8.20733 9 7.77778 9C7.34822 9 7 9.34822 7 9.77778C7 10.2073 7.34822 10.5556 7.77778 10.5556Z"
+                                fill="white" />
+                            <path
+                                d="M11.3325 10.5556C11.762 10.5556 12.1102 10.2073 12.1102 9.77778C12.1102 9.34822 11.762 9 11.3325 9C10.9029 9 10.5547 9.34822 10.5547 9.77778C10.5547 10.2073 10.9029 10.5556 11.3325 10.5556Z"
+                                fill="white" />
+                            <path
+                                d="M14.8889 10.5556C15.3184 10.5556 15.6666 10.2073 15.6666 9.77778C15.6666 9.34822 15.3184 9 14.8889 9C14.4593 9 14.1111 9.34822 14.1111 9.77778C14.1111 10.2073 14.4593 10.5556 14.8889 10.5556Z"
+                                fill="white" />
+                            <path
+                                d="M13.1098 12.3368C13.5394 12.3368 13.8876 11.9886 13.8876 11.559C13.8876 11.1295 13.5394 10.7812 13.1098 10.7812C12.6803 10.7812 12.332 11.1295 12.332 11.559C12.332 11.9886 12.6803 12.3368 13.1098 12.3368Z"
+                                fill="white" />
+                            <path
+                                d="M9.55512 12.3368C9.98468 12.3368 10.3329 11.9886 10.3329 11.559C10.3329 11.1295 9.98468 10.7812 9.55512 10.7812C9.12557 10.7812 8.77734 11.1295 8.77734 11.559C8.77734 11.9886 9.12557 12.3368 9.55512 12.3368Z"
+                                fill="white" />
+                            <path
+                                d="M6.00043 12.3368C6.42999 12.3368 6.77821 11.9886 6.77821 11.559C6.77821 11.1295 6.42999 10.7812 6.00043 10.7812C5.57088 10.7812 5.22266 11.1295 5.22266 11.559C5.22266 11.9886 5.57088 12.3368 6.00043 12.3368Z"
+                                fill="white" />
+                            <path
+                                d="M4.22309 14.1102C4.65265 14.1102 5.00087 13.762 5.00087 13.3325C5.00087 12.9029 4.65265 12.5547 4.22309 12.5547C3.79354 12.5547 3.44531 12.9029 3.44531 13.3325C3.44531 13.762 3.79354 14.1102 4.22309 14.1102Z"
+                                fill="white" />
+                            <path
+                                d="M7.77778 14.1102C8.20733 14.1102 8.55556 13.762 8.55556 13.3325C8.55556 12.9029 8.20733 12.5547 7.77778 12.5547C7.34822 12.5547 7 12.9029 7 13.3325C7 13.762 7.34822 14.1102 7.77778 14.1102Z"
+                                fill="white" />
+                            <path
+                                d="M11.3325 14.1102C11.762 14.1102 12.1102 13.762 12.1102 13.3325C12.1102 12.9029 11.762 12.5547 11.3325 12.5547C10.9029 12.5547 10.5547 12.9029 10.5547 13.3325C10.5547 13.762 10.9029 14.1102 11.3325 14.1102Z"
+                                fill="white" />
+                            <path
+                                d="M14.8891 14.1102C15.3187 14.1102 15.6669 13.762 15.6669 13.3325C15.6669 12.9029 15.3187 12.5547 14.8891 12.5547C14.4596 12.5547 14.1113 12.9029 14.1113 13.3325C14.1113 13.762 14.4596 14.1102 14.8891 14.1102Z"
+                                fill="white" />
+                            <path
+                                d="M13.1098 15.8915C13.5394 15.8915 13.8876 15.5433 13.8876 15.1137C13.8876 14.6842 13.5394 14.3359 13.1098 14.3359C12.6803 14.3359 12.332 14.6842 12.332 15.1137C12.332 15.5433 12.6803 15.8915 13.1098 15.8915Z"
+                                fill="white" />
+                            <path
+                                d="M9.55512 15.8915C9.98468 15.8915 10.3329 15.5433 10.3329 15.1137C10.3329 14.6842 9.98468 14.3359 9.55512 14.3359C9.12557 14.3359 8.77734 14.6842 8.77734 15.1137C8.77734 15.5433 9.12557 15.8915 9.55512 15.8915Z"
+                                fill="white" />
+                            <path
+                                d="M6.00043 15.8915C6.42999 15.8915 6.77821 15.5433 6.77821 15.1137C6.77821 14.6842 6.42999 14.3359 6.00043 14.3359C5.57088 14.3359 5.22266 14.6842 5.22266 15.1137C5.22266 15.5433 5.57088 15.8915 6.00043 15.8915Z"
+                                fill="white" />
+                            <path d="M2.22266 22.2188H29.7782V24.441H2.22266V22.2188Z" fill="#D22F27" />
+                        </svg>
+                        English
+
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
+                <!-- Notifications -->
+                <div class="dropdown">
+                    <a class="text-reset me-5  hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-mdb-toggle="dropdown" aria-expanded="true">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 18.0233C21 18.5113 20.6043 18.907 20.1163 18.907H3.88372C3.39565 18.907 3 18.5113 3 18.0233C3 17.5352 3.39566 17.1395 3.88372 17.1395H3.9V10.9809C3.9 6.57288 7.527 3 12 3C16.473 3 20.1 6.57288 20.1 10.9809V17.1395H20.1163C20.6043 17.1395 21 17.5352 21 18.0233ZM5.7 17.1395H18.3V10.9809C18.3 7.5494 15.4794 4.76744 12 4.76744C8.5206 4.76744 5.7 7.5494 5.7 10.9809V17.1395ZM9.97604 20.7558C9.73121 20.2608 10.1977 19.7907 10.75 19.7907H13.25C13.8023 19.7907 14.2688 20.2608 14.024 20.7558C13.9155 20.9751 13.7699 21.1773 13.591 21.3529C13.169 21.7672 12.5967 22 12 22C11.4033 22 10.831 21.7672 10.409 21.3529C10.2301 21.1773 10.0845 20.9751 9.97604 20.7558Z"
+                                fill="#C1C1C1" />
+                            <circle cx="17.5" cy="6.5" r="4.5" fill="white" />
+                            <circle cx="17.5" cy="6.5" r="3.5" fill="#0177FB" />
+                        </svg>
+
+
+
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="#">Some news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Another news</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Avatar -->
+                <div class="dropdown">
+                    <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
+                        id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25"
+                            alt="Black and White Portrait of a Man" loading="lazy" />
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                        <li>
+                            <a class="dropdown-item" href="#">My profile</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Right elements -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <h6 class="mt-4">withdraw</h6>
+
+    <div class="border border-light-blue p-5">
+
+        <div class="row mt-5">
+            <div class="col">
+                <div
+                    class="d-flex bg-light p-2 border border-light-subtle rounded-3 flex-row justify-content-between align-items-center">
+                    <div>Your balance</div>
+                    <div class="fs-5 fw-bold pr-4">123$</div>
+                </div>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control p-2" placeholder="Amount you want to withdraw"
+                    aria-label="amount you want to withdraw" />
+            </div>
+        </div>
+
+        <h5 class="mt-5">Choose Saved withdrawal methods</h5>
+        <div class="d-flex flex-row gap-6 align-items-start  mt-5">
+            <div class="d-flex flex-column bg-light h-100 w-50 mx-4 p-4 ">
+                <div class="d-flex flex-row gap-5 align-items-start">
+                    <div class=""><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="20" fill="#B47AFF" fill-opacity="0.1" />
+                            <path
+                                d="M13 17V25M17.5 17V25M22.5 17V25M27 17V25M11 26.6L11 27.4C11 27.96 11 28.2401 11.109 28.454C11.2049 28.6421 11.3578 28.7951 11.546 28.891C11.7599 29 12.0399 29 12.6 29H27.4C27.9601 29 28.2401 29 28.454 28.891C28.6422 28.7951 28.7951 28.6421 28.891 28.454C29 28.2401 29 27.96 29 27.4V26.6C29 26.0399 29 25.7599 28.891 25.546C28.7951 25.3578 28.6422 25.2049 28.454 25.109C28.2401 25 27.9601 25 27.4 25H12.6C12.0399 25 11.7599 25 11.546 25.109C11.3578 25.2049 11.2049 25.3578 11.109 25.546C11 25.7599 11 26.0399 11 26.6ZM19.6529 11.0771L12.2529 12.7216C11.8059 12.8209 11.5823 12.8706 11.4155 12.9908C11.2683 13.0968 11.1527 13.2409 11.0811 13.4076C11 13.5965 11 13.8255 11 14.2835L11 15.4C11 15.96 11 16.2401 11.109 16.454C11.2049 16.6421 11.3578 16.7951 11.546 16.891C11.7599 17 12.0399 17 12.6 17H27.4C27.9601 17 28.2401 17 28.454 16.891C28.6422 16.7951 28.7951 16.6421 28.891 16.454C29 16.2401 29 15.96 29 15.4V14.2835C29 13.8255 29 13.5965 28.9188 13.4076C28.8473 13.2409 28.7317 13.0968 28.5845 12.9908C28.4177 12.8706 28.1942 12.8209 27.7471 12.7216L20.3471 11.0771C20.2176 11.0483 20.1528 11.0339 20.0874 11.0282C20.0292 11.0231 19.9708 11.0231 19.9126 11.0282C19.8472 11.0339 19.7824 11.0483 19.6529 11.0771Z"
+                                stroke="#B47AFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="col gap-2">
+                        <p>Bank Name : Bank Name</p>
+                        <p>Bank Name : Bank Name</p>
+                        <p>Bank Name : Bank Name</p>
+                        <p>Bank Name : Bank Name</p>
+                    </div>
+                    <div>
+                        <div class="dropdown">
+                            <div class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg width="4" height="18" viewBox="0 0 4 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2" r="2" fill="#19224C" />
+                                    <circle cx="2" cy="9" r="2" fill="#19224C" />
+                                    <circle cx="2" cy="16" r="2" fill="#19224C" />
+                                </svg>
+
+                                </button>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item active" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item " href="#"><button type="button"
+                                                class="border-0 bg-transparent d-inline" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">
+                                                Delete
+                                            </button></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column bg-light h-100 w-50 mx-4 p-4 ">
+                <div class="d-flex flex-row gap-5">
+                    <div class=""><svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="20" fill="#2E81FF" fill-opacity="0.1" />
+                            <path d="M15 23L15 17" stroke="#2E81FF" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M28.8333 17H26.2308C24.4465 17 23 18.3431 23 20C23 21.6569 24.4465 23 26.2308 23H28.8333C28.9167 23 28.9583 23 28.9935 22.9979C29.5328 22.965 29.9623 22.5662 29.9977 22.0654C30 22.0327 30 21.994 30 21.9167V18.0833C30 18.006 30 17.9673 29.9977 17.9346C29.9623 17.4338 29.5328 17.035 28.9935 17.0021C28.9583 17 28.9167 17 28.8333 17Z"
+                                stroke="#2E81FF" stroke-width="1.5" />
+                            <circle cx="26" cy="20" r="1" fill="#2E81FF" />
+                            <path
+                                d="M28.965 17C28.8873 15.1277 28.6366 13.9797 27.8284 13.1716C26.6569 12 24.7712 12 21 12L18 12C14.2288 12 12.3431 12 11.1716 13.1716C10 14.3431 10 16.2288 10 20C10 23.7712 10 25.6569 11.1716 26.8284C12.3431 28 14.2288 28 18 28H21C24.7712 28 26.6569 28 27.8284 26.8284C28.6366 26.0203 28.8873 24.8723 28.965 23"
+                                stroke="#2E81FF" stroke-width="1.5" />
+                        </svg>
+                    </div>
+                    <div class="col gap-2">
+                        <p>Bank Name : Bank Name</p>
+                        <p>Bank Name : Bank Name</p>
+                        <p>Bank Name : Bank Name</p>
+                    </div>
+                    <div>
+                        <div class="dropdown">
+                            <div class="" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg width="4" height="18" viewBox="0 0 4 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2" r="2" fill="#19224C" />
+                                    <circle cx="2" cy="9" r="2" fill="#19224C" />
+                                    <circle cx="2" cy="16" r="2" fill="#19224C" />
+                                </svg>
+
+                                </button>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item active" href="#">Edit</a></li>
+                                    <li><a class="dropdown-item " href="#"><button type="button"
+                                                class="border-0 bg-transparent d-inline" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">
+                                                Delete
+                                            </button></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-7">
+
+                <div class="modal-body p-5 fs-3 text=center d-flex align-items-center justify-content-center ">
+                    Are you sure to remove this method ?
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
